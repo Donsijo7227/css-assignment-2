@@ -11,7 +11,7 @@
     padding-left: 30px;
 }
 
-/* Set it to a multi-column layout */
+/* Setting it to a multi-column layout */
 main {
     columns: 2;
     column-gap: 20px;
@@ -22,6 +22,7 @@ h1 {
     font-size: 20px;
     color: orange;
     text-transform: uppercase;
+    font-family: "Noto Serif Khojki", serif;
 }
 
 /* decorative lines on both sides of the heading */
