@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+Mono:wght@100..900&family=Noto+Serif+Khojki:wght@400..700&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+Mono:wght@100..900&family=Noto+Serif+Khojki:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+Mono:wght@100..900&family=Noto+Serif+Khojki:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Secular+One&display=swap');
+
+/* Adjust container width */
+#container {
+    width: 60%;
+    margin: 60px auto;
+}
+
+/* Set it to a multi-column layout */
+main {
+    columns: 2;
+    column-gap: 20px;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 20px;
+    color: orange;
+    text-transform: uppercase;
+}
+
+/* decorative lines on both sides of the heading */
+h1::before,
+h1::after {
+    content: '|';
+    color: #555;
+}
+
+strong {
+    color: orange;
+}
+
+/* adjust margin and font size */
+h2 {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* adjust space and alignment */
+p {
+    font-size: 14px;
+    margin-top: 8px;
+    text-align: left;
+    font-family: "Lora", serif;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+/* Adjust dimensions of the image */
+.image {
+    height: 280px;
+    width: 480px;
+}
+
+/* Adjust font and alignment of the heading */
+article h2:nth-of-type(1) {
+    font-size: 36px;
+    text-align: left;
+    text-transform: capitalize;
+    font-family: "Noto Serif Khojki", serif;
+    margin: 10px;
+}
+
+/* Convert first letter to uppercase */
+article h2:nth-of-type(1)::first-letter {
+    text-transform: uppercase;
+}
+
+article p:nth-of-type(1) {
+    text-align: justify;
+    width: 100%;
+    text-align: center;
+}
+
+article h2:nth-of-type(2),
+article h2:nth-of-type(3),
+article h2:nth-of-type(4),
+article h2:nth-of-type(5),
+article h2:nth-of-type(6),
+article h2:nth-of-type(7),
+article h2:nth-of-type(8) {
+    width: 45%;
+    font-family: "Roboto", sans-serif;
+}
+
+
+article p:nth-of-type(2),
+article p:nth-of-type(3),
+article p:nth-of-type(4),
+article p:nth-of-type(5),
+article p:nth-of-type(6),
+article p:nth-of-type(7),
+article p:nth-of-type(8) {
+    width: 55%;
+}
+
+article p:last-of-type {
+    font-weight: bold;
+}
+
+footer p small:last-of-type {
+    font-weight: bold;
+}
+
+time {
+    font-weight: bold;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+
+    /* Adjust container width for smaller screens */
+    #container {
+        width: 90%;
+    }
+
+    /* Adjust column layout for smaller screens */
+    main {
+        columns: 1;
+    }
+
+    /* Adjust font size for smaller screens */
+    h1 {
+        font-size: 18px;
+    }
+
+    /* Adjust image size for smaller screens */
+    .image {
+        height: auto;
+        width: 10%;
+    }
+
+    /* Adjust font size and alignment for smaller screens */
+    h2 {
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+
+    p {
+        font-size: 12px;
+        margin-top: 6px;
+    }
+
+    /* Adjust heading styles for smaller screens */
+    article h2:nth-of-type(1) {
+        font-size: 24px;
+        margin: 5px;
+    }
+}
