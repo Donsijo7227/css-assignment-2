@@ -120,7 +120,7 @@ time {
 
     /* Adjust column layout for smaller screens */
     main {
-        columns: 1;
+        columns: 2;
     }
 
     /* Adjust font size for smaller screens */
@@ -131,7 +131,7 @@ time {
     /* Adjust image size for smaller screens */
     .image {
         height: auto;
-        width: 10%;
+        width: 60%;
     }
 
     /* Adjust font size and alignment for smaller screens */
@@ -149,5 +149,25 @@ time {
     article h2:nth-of-type(1) {
         font-size: 24px;
         margin: 5px;
+    }
+
+    article p:nth-of-type(2),
+    article p:nth-of-type(3),
+    article p:nth-of-type(4),
+    article p:nth-of-type(5),
+    article p:nth-of-type(6),
+    article p:nth-of-type(7),
+    article p:nth-of-type(8) {
+        width: 100%;
+    }
+    article h2:nth-of-type(2),
+    article h2:nth-of-type(3),
+    article h2:nth-of-type(4),
+    article h2:nth-of-type(5),
+    article h2:nth-of-type(6),
+    article h2:nth-of-type(7),
+    article h2:nth-of-type(8) {
+        width: 100%;
+
     }
 }
